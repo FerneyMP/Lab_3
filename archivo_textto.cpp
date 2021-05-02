@@ -34,36 +34,26 @@ void leer_menu()
     menu_ent.close();
 }
 
-int *Char_a_entero(char *c)
+
+int *Char_a_bool(char c)
 {
-    int *change=new int{};
-    int *ptr;
-    for(int i=0;c[i]!='\0';i++) change[i]=char_entero(c[i]);
-    ptr=change;
-    for(int j=0;c[j]!='\0';j++) cout << ptr[j] << endl;
-    delete change;
-    return ptr;
-}
+    int change, contador=0;
+    //int *retorno=new int;
 
-int char_entero(char c)
-{
-    int change;
-    change= int(c);
-    return change;
-}
-
-
-int *Entero_a_Bool(char *c)
-{
-    int *puntero;
-    puntero = Char_a_entero(c);
-    short binario[8];
-
-    //For primario para recorrer la cadena de caracteres..
-    //int decimal;
-    for(int i=0;c[i]!='\0';i++){
-        binario[i] = puntero[i]%2;
-        puntero[i]/=2;
+    change = int(c);
+    int binario[8]={0,0,0,0,0,0,0,0};
+    int invertido[8]={0,0,0,0,0,0,0,0};
+    //For que convierte el caracter ingresado en un número binario
+    for(int i=0;i<=8;i++){
+        binario[i] = change%2;
+        change/=2;
     }
-    return puntero;
+
+    //ciclo For que invierte las posciones del número binario
+    for(int retorno=7; retorno>=0; retorno--){
+        invertido[contador]=binario[retorno];
+        contador++;
+    }
+
+    return invertido;
 }

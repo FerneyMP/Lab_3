@@ -13,9 +13,7 @@ void leer_menu();
 void creacion_codificado();
 
 //idea: funciones para convertir un caracter a un número binario ... preguntar si está correcto...
-int *Char_a_entero(char *c);
-int char_entero(char c);
-int *Entero_a_Bool(char *c);
+int *Char_a_bool(char c);
 
 //seguir desarollando los prototipos hacia abajo ..
 

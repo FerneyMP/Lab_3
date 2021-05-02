@@ -4,12 +4,10 @@ int main()
 {
     //Pruebas de conversión de char a bool
     /*
-    int *ptr = nullptr;
-    char cadena[]={"hola"};
-    Char_a_entero(cadena);
-    Entero_a_Bool(cadena);
-
-    for(int i=0; ptr[i]!='\0'; i++) cout << ptr[i] << endl;
+    char c = 'h';
+    int *a;
+    a=Char_a_bool(c);
+    for(int u=0;u<9;u++) cout << *(a+u) << endl;
     */
 
     bool opciones = false;
