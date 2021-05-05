@@ -25,4 +25,9 @@ int bool_a_char(int b[]);
 //seguir desarollando los prototipos hacia abajo ..
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
+//Funciones para el primer método (caracter)
+
+void leer_archivo(string name);
+void escribir_archivo();
+void conversion_metodo1();
 #endif // ARCHIVO_TEXTTO_H

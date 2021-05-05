@@ -1,21 +1,34 @@
 #include "archivo_textto.h"
 
-// CORREGIR ERROR DE IMPRESIÓN (POSIBLEMENTE CICLO MAYOR A 8 Y DEBE SER <= ..
 int main()
 {
-    //Pruebas de conversión de char a bool
 
+    //Pruebas de conversión de char a bool
+    /*
     char c = 'h';
     int *a;
     a=Char_a_bool(c);
-    for(int u=0;u<=8;u++) cout << *(a+u) << endl;
+    for(int u=0;u<=7;u++) cout << *(a+u) << endl;
     // Fin de prueba.. FUNCIONA
 
     //Pruebas de conversión de bool a entero
 
-    int b[8]={0,1,1,0,1,0,0,0};
+    int b[8]={0,1,1,0,1,1,1,1};
     bool_a_char(b);
+    */
     // Finde prueba .. FUNCIONA
+
+
+    //Ejecución de prueba función leer_archivo ..
+
+    string archivo;
+    cout << "Escriba el nombre del archivo: "; cin >> archivo;
+    leer_archivo(archivo);
+
+
+
+
+
 
     // DESARROLLO DEL PROGRAMA ..
 
