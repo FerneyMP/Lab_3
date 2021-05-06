@@ -24,6 +24,7 @@ int main()
     string archivo;
     cout << "Escriba el nombre del archivo: "; cin >> archivo;
     leer_archivo(archivo);
+    conversion_metodo1();
 
 
 

@@ -25,9 +25,14 @@ int bool_a_char(int b[]);
 //seguir desarollando los prototipos hacia abajo ..
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
-//Funciones para el primer método (caracter)
-
+//Funciones para el primer método (caracter):
+// En leer archivo se convierte e invierte de caracter a binario, luego, en conversión se toma el archivo modificado en
+// leer archivo y se codifica, ambas funciones son necesarias para el primer método de codificación
 void leer_archivo(string name);
-void escribir_archivo();
 void conversion_metodo1();
+
+//idea: función que cuenta la cantidad de ceros y unos dentro del archivo binario ..
+void ceros_unos_count(int semilla, char cadena[], int &ceros, int &unos);
+
+
 #endif // ARCHIVO_TEXTTO_H
