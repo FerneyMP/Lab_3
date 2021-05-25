@@ -58,3 +58,26 @@ int main()
 
     return 0;
 }
+
+//sudo.txt clave encriptada del administrdor
+//usuario.dat datos encriptados del usuario
+//coficiado, por cualquier metodo
+//no usar librerias de contenedores
+//actualizar cada que se accede
+
+
+
+
+//validacion como usuario administrador
+        //abrir sudo.txt y comparar con lo ingresado (encriptado)
+
+//registro (una vez validado)
+        // cedula,clave, saldo COP
+
+//consultar saldo
+//retirar dinero (especificar)
+//ambos cuestan 1000 COP y se actualiza el saldo (cerrar archivo)
+
+//TODAS LAS TRANSACCIONES EN EL CAJERO DEBEN TENER LA INFORMACION ENCRIPATADA
+
+
