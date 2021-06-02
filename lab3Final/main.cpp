@@ -12,16 +12,10 @@ int main()
     leer_menu();
 
     cout << "Por favor elija una opcion: " << endl;
-    cout << "1. Metodo 1\n2. Metodo 2\n3. Cajero " << endl;  cin >> funcionalidades;
-    while ((funcionalidades<'1') || (funcionalidades>'3')){
+    cout << "1. Metodo 1\n2. Metodo 2\n3. Cajero \n4. Salir " << endl;  cin >> funcionalidades;
+    while ((funcionalidades<'1') || (funcionalidades>'4')){
          cout << "El valor no esta permitido, intente nuevamente  " ; cin>>funcionalidades;
     }
-
-    cout<<"Semilla: "<<endl; cin>> Semilla; //validar
-
-    cout<<"Nombre del archivo fuente: "<<endl; cin>> nombre_ar;
-    cout<<"Nombre del archivo salida: "<<endl; cin>> nombre_ar2;
-
     switch (funcionalidades){
 
     case '1':{
@@ -30,7 +24,12 @@ int main()
          cout << "El valor no esta permitido, intente nuevamente  " ; cin>>menu2;
     }
 
+    cout<<"Semilla: "<<endl; cin>> Semilla; //validar
 
+    cout<<"Nombre del archivo fuente: "<<endl; cin>> nombre_ar;
+    cout<<"Nombre del archivo salida: "<<endl; cin>> nombre_ar2;
+
+    //   ---->  AGREGAR MÉTODO 1.
 
     break;
 
@@ -41,9 +40,14 @@ int main()
     while ((menu2<'1') || (menu2>'2')){
          cout << "El valor no esta permitido, intente nuevamente  " ; cin>>menu2;
     }
+    cout<<"Semilla: "<<endl; cin>> Semilla; //validar
 
-    if (menu2==1)codificacion(Semilla,nombre_ar+".txt",nombre_ar2+".dat");
-    decodificacion(Semilla,nombre_ar+".dat",nombre_ar2+".txt");  break;
+    cout<<"Nombre del archivo fuente: "<<endl; cin>> nombre_ar;
+    cout<<"Nombre del archivo salida: "<<endl; cin>> nombre_ar2;
+
+    if (menu2=='1') codificacion(Semilla,nombre_ar+".txt",nombre_ar2+".dat");
+    else if(menu2=='2') decodificacion(Semilla,nombre_ar+".dat",nombre_ar2+".txt");
+    break;
 
       }
 
@@ -51,9 +55,11 @@ int main()
     cout<<"caso3"<<endl;
     break;
 
-         }
-
-       }
-
+         }       
+ /*   case '4':
+        cout << "¡Gracias por utilizar nuestros servicios!. Vuelva pronto :)" << endl;
+        break;
+        }*/
+    }
     return 0;
 }
